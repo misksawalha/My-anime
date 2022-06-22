@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content=" ">
+    <link rel="shortcut icon" href="assets/img/favicon .ico" type="image/x-icon">
+    <!-- import font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito&display=swap"
+    rel="stylesheet">
+    <!-- import font awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- import bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- import main style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
+    <!-- import main style responsive -->
+    <link rel="stylesheet" href="assets/css/style_responsive.css">
+    <title>Admin</title>
+</head>
+<body>
+
+  <!-- <section>
+    <div class="one"></div>
+  </section> -->
+
+   <!-- start nav -->
+   <section class="nav ">
+    <nav class="navbar navbar-expand-lg bg-white w-100">
+        <div class="container-fluid">
+          <img class="navbar-brand" src="assets/img/logo3.PNG" >
+          <button class="navbar-toggler text-dark" type="button btn btn-outline-success" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-dark "></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active text-capitalize" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-capitalize trans" href="#">our movie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize trans" href="#">contact</a>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class=" form-control me-2" id="admainSearch" type="search" placeholder="Search" aria-label="Search">
+              <!-- <button class="searchBtn btn btn-outline-light trans" type="submit">Search</button> -->
+            </form>
+          </div>
+        </div>
+      </nav>
+   </section>
+   <!-- end nav -->
+
+   <!-- start body -->
+      <section class="bodyA ">
+         <div class="container ">
+          <div class=" adminBtn my-5 border border-3  rounded-pill  " style="width: fit-content;" >
+            <button type="button" id="addBtn" class="trans movieBtn btn btn-light rounded-pill text-capitalize">Add</button>
+            <button type="button" id="removeAll" class="trans movieBtn btn btn-light rounded-pill text-capitalize ">Remove</button>
+            <!-- <button type="button" id="addAnime" class="trans movieBtn btn btn-light rounded-pill text-capitalize ">Rkkemove</button> -->
+            <button type="button" id="updateBtn" class="trans movieBtn btn btn-light rounded-pill text-capitalize">Update</button>
+           </div>
+
+           <!-- start update -->
+           <div class="updateForm">
+            <div class="container border  my-4" style="  width: 40%; margin:auto;">
+                <h2 class="text-capitalize text-center">my anime</h2>
+                <form class="my-4">
+                    <div class="mb-4 ">
+                      <input type="text" placeholder="Anime Name" style="width:100%;margin:10px 0; display:block;" class="form-control" id="upName" >
+                    </div>
+                    
+                    <div class="mb-4 ">
+                        <input type="date" placeholder="Show Date" style="width:100%;margin:10px 0; display:block;" class="form-control" id="upDate" >
+                      </div> 
+        
+                      <div class="mb-4 ">
+                        <input type="text" placeholder="Anime type" style="width:100%;margin:10px 0; display:block;" class="form-control" id="upType" >
+                      </div> 
+                      <input type="file" id="imgUpdate" style="width:100%;margin:10px 0; display:block;" class="form-control" accept="image/jpeg, image/png, image/jpg">
+                </form>
+                <div class="formBtn ms-auto text-end py-2">
+                    <button type="button" id="updateConfirm" class="btn btn-secondary">confirm</button>
+                   <button type="button" id="updateCancle" class="btn btn-dark">cancle</button>
+                </div>
+               
+            </div>
+        </div>
+        <!-- end update -->
+
+        <!-- start add -->
+        <div class="addForm">
+          <div class="container border  my-4 " style="  width: 40%; margin:auto;">
+              <h2 class="text-capitalize text-center">my anime</h2>
+              <form class="my-4">
+                  <div class="mb-4 ">
+                    <input type="text"  style="width:100%;margin:10px 0; display:block;"  placeholder="Anime Name" class="form-control" id="addName" aria-describedby="emailHelp">
+                  </div>
+                  
+                  <div class="mb-4 ">
+                      <input type="date"  style="width:100%;margin:10px 0; display:block;" placeholder="Show Date" class="form-control" id="addDate" aria-describedby="emailHelp">
+                    </div> 
+  
+                    <div class="mb-4 ">
+                      <input type="text" style="width:100%;margin:10px 0; display:block;"  placeholder="Anime type" class="form-control" id="addType" aria-describedby="emailHelp">
+                    </div> 
+                    <input type="file"  style="width:100%;margin:10px 0; display:block;" id="addImg" class="form-control" accept="image/jpeg, image/png, image/jpg">
+              </form>
+              <div class="formBtn ms-auto text-end py-2">
+                  <button type="button" id="addConfirm" class="btn btn-secondary">confirm</button>
+                 <button type="button" id="addCancle" class="btn btn-dark">cancle</button>
+              </div>
+             
+          </div>
+      </div>
+        
+        <!-- end update -->
+          
+             <table class="table table-dark table-striped ">
+                
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Date</th>
+              <th scope="col">Type</th>
+              <th scope="col">Image</th>
+              <th scope="col">Update</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="data" class="data">
+            
+          </tbody>
+        
+        </table>
+      </div>
+      </section>
+      
+   <!-- end body -->
+
+  <!-- end update section -->
+  
+ <!-- import bootstrap js  -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+   
+    <!-- jquery lib -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+     <!-- my js file -->
+     <script src="assets/js/admin.js"></script>
+
+</body>
+</html>

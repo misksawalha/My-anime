@@ -1,0 +1,99 @@
+:root{
+  --myOrange:#ffa31a;
+  --darkOrange:#d68d1e;
+  --myBlack:#000;
+  --myGray:#737373;
+}
+
+.trans{
+    transition: 0.5s;
+}
+
+.one{
+    height: 100px;
+    width: 100px;
+    background-color:var(--myOrange)
+}
+/* nav started */
+.navbar-brand{
+    color:var(--myOrange);
+}
+.navbar ul li a{
+    color:var(--myGray);
+}
+.navbar ul .active{
+    color: var(--myOrange);
+}
+.navbar ul :hover a{
+    color: var(--myOrange);
+}
+.navbar .searchBtn{
+    background-color: var(--myOrange);
+    color: white;
+    /* border: var(--myOrange); */
+    
+}
+
+.searchBtn:hover {
+    
+    background-color:var(--myGray);
+    /* color: black !important; */
+}
+.navbar{
+    background-color: #000 !important;
+}
+/* nav ended */
+ 
+/* my movie start */
+.movie{
+    background-color: #000;
+}
+.typeBtn{
+    width: fit-content;
+    background-color: rgb(255, 255, 255);
+    /* margin: auto; */
+}
+.movie .active{
+    color:white;
+    background-color: var(--myOrange);
+}
+.movieBtn{
+    color:var(--myGray);
+}
+.movieBtn:hover{
+    background-color: var(--myOrange);
+    color:white;
+}
+.movie h1{
+   width: fit-content;
+   color: var(--myOrange);
+  
+}
+/* my movie end */
+
+/* start footer  */
+.myFooter{
+    background-color: var(--myOrange);
+}
+footer ul li{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+footer ul li:hover a{
+    color: var(--myBlack)!important;
+}
+/* end footer  */
+
+/*start form */
+.container .border{
+    border-color: var(--myOrange);
+}
+/* .myForm .formBtn{
+    display:inline-block;
+    
+    margin-left: 350px;
+   
+} */
+/* end form */
